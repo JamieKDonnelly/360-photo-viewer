@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.upload {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#viewer {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 2s ease-in-out;
+}
+
+#viewer.show {
+  z-index: 1;
+  opacity: 1;
+}
+
+.imageInput {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.imageInput :focus + label,
+.imageInput + label:hover {
+  background-color: red;
+}
+
+.button {
+  display: inline-block;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  background: black;
+  color: white;
+  font-size: 1.6rem;
+}
+
+a.load-image-button {
+  font-size: 1.6rem;
+  text-decoration: underline;
+}

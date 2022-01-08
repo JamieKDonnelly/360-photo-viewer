@@ -10,7 +10,6 @@ function loadViewer(imageUrl) {
     navbar_style: {
       backgroundColor: "rgba(58, 67, 77, 0.7)",
     },
-    move_inertia: true,
   });
 
   viewer.classList.add("show");

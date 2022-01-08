@@ -41,6 +41,10 @@ h3 {
   font-size: 1.8rem;
 }
 
+a {
+  color: blue;
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -48,6 +52,18 @@ a:hover {
 footer {
   text-align: center;
   margin-top: 4rem;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer span {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.8rem;
 }
 
 #viewer {

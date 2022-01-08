@@ -5,12 +5,12 @@ function loadViewer(imageUrl) {
   let psv = new PhotoSphereViewer({
     panorama: imageUrl,
     container: viewer,
-    time_anim: 3000,
+    time_anim: 0,
     navbar: true,
-    usexmpdata: true,
     navbar_style: {
       backgroundColor: "rgba(58, 67, 77, 0.7)",
     },
+    move_inertia: true,
   });
 
   viewer.classList.add("show");
